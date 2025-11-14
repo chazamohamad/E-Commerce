@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>eccomerce — Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-root">
+      <section class="login-card" role="main" aria-labelledby="login-title">
+        <h1 id="login-title" class="brand">Eccomerce</h1>
+        <p class="subtitle">Welcome back — sign in to continue</p>
+
+        <form id="loginForm" class="form" autocomplete="off" novalidate>
+          <label class="field">
+            <span class="label-text">Username</span>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              required
+              placeholder="chaza"
+            />
+          </label>
+
+          <label class="field">
+            <span class="label-text">Password</span>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              required
+              placeholder="fakepasw"
+            />
+          </label>
+
+          <button type="submit" class="btn-submit">Sign in</button>
+
+          <p id="feedback" class="feedback" aria-live="polite"></p>
+        </form>
+
+        <footer class="card-footer">
+          <small
+            >Demo credentials: <strong>chaza</strong> /
+            <strong>fakepasw</strong></small
+          >
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
